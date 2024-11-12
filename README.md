@@ -35,6 +35,10 @@ Program terdiri dari dua komponen utama:
    - Mengatur alur input dan output program
    - Mengelola penyimpanan data dalam list
 
+## Flowchart Program
+
+<img src="/img/datamahasw.drawio.png" width="500" alt="">
+
 ### Algoritma Program
 
 1. **Inisialisasi**
@@ -99,9 +103,6 @@ Program terdiri dari dua komponen utama:
 
 ## Contoh Output
 
-
-
-## Flowchart Program
 
 
 
