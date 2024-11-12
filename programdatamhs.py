@@ -30,14 +30,23 @@ def main():
             break
     
     # Menampilkan hasil
-    print("\n" + "="*70)
-    print("| No |    Nama    |   NIM   | Tugas | UTS | UAS | Akhir |")
-    print("="*70)
+    print("\n" + "="*72)
+    print("| {0:^4} | {1:^15} | {2:^7} | {3:^7} | {4:^5} | {5:^5} | {6:^7} |".format(
+        "No", "Nama", "NIM", "Tugas", "UTS", "UAS", "Akhir"))
+    print("="*72)
     
     for idx, student in enumerate(students, 1):
-        print(f"| {idx:2} | {student.nama:<10} | {student.nim:^7} | {student.tugas:^5} | {student.uts:^3} | {student.uas:^3} | {student.nilai_akhir:^5.2f} |")
+        print("| {0:^4} | {1:<15} | {2:^7} | {3:^7} | {4:^5} | {5:^5} | {6:^7.2f} |".format(
+            idx, 
+            student.nama,
+            student.nim,
+            student.tugas,
+            student.uts,
+            student.uas,
+            student.nilai_akhir
+        ))
     
-    print("="*70)
+    print("="*72)
 
 if __name__ == "__main__":
     main()
